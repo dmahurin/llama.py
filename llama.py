@@ -88,7 +88,7 @@ lib.llama_print_system_info.argtypes = []
 lib.llama_print_system_info.restype = c_char_p
 
 # Python functions
-def llama_context_default_params() -> c_char_p:
+def llama_context_default_params() -> llama_context_params:
     params = lib.llama_context_default_params()
     return params
 
